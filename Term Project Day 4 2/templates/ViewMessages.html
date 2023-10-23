@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Your Messages</title>
+</head>
+<body>
+    <h1>Your messages:</h1>
+
+        {% for message in messages %}
+        <p>{{message[0]}}: {{message[1]}}</p>
+        {% endfor %}
+        <form method="POST" action="/sendmessages">
+            <input type="hidden" name="sentTo" value="{{person}}">
+            <p>Send Message: <textarea name="message"></textarea><p>
+            <button type="submit">Send</button>
+        </form>
+
+    <a href="/view"><button>Back to home</button></a>
+    <p>🏠</p>
+
+</body>
+</html> 

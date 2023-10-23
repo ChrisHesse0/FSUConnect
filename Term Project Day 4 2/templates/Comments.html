@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comments</title>
+</head>
+<body>
+    <h1>Comments</h1>
+        {% for comment in comments %}
+        <p>From: {{ comment[1] }}</p>
+        <p>Comment: {{comment[2]}}</p>
+        <p><br></p>
+        {% endfor %}
+    <br><a href="/view"><button>Back to home</button></a>
+    <p>🏠</p>
+</body>
+</html> 

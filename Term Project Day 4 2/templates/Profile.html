@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{person[0][2]}}</title>
+</head>
+<body>
+    <p><b>Name:</b> {{person[0][2]}}<br></p>
+    <p3><b>Major:</b> {{person[0][5]}}<br></p3>
+    <p4><b>GPA:</b> {{person[0][6]}}<br></p4>
+    <p5><b>FSUID:</b> {{person[0][9]}}<br></p5>
+    <p6><b>Description:</b> {{person[0][4]}}<br><br><br><br></p6>
+    <p><form method="POST" action="/addcomment"><input type="hidden" name="prof" value="{{person[0][9]}}"><button type="submit" style="background-color: greenyellow;">Add a comment to <b>{{person[0][2]}}'s</b> page</button></form></p>
+    <p><form method="POST" action="/profilecomments"><input type="hidden" name="page" value="{{person[0][9]}}"><button type="submit" style="background-color: greenyellow;">View <b>{{person[0][2]}}'s comments</b></button></form></p>
+    <p><form method="POST" action="/personalmessages"><input type="hidden" name="fsuid" value="{{person[0][9]}}"><button type="submit" style="background-color: greenyellow;">Message <b>{{person[0][2]}}'s</b></button></form></p>
+    
+        
+    <a href="/view"><button>Back to home</button></a>
+    <p>🏠</p>
+</body>

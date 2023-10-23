@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Messages With Page</title>
+</head>
+<body>
+    <h1>Your messages:</h1>
+
+        {% for person in people %}
+        <p>
+            FSUID: {{ person }}
+            <form method="POST" action="/personalmessages">
+                <input type="hidden" name="fsuid" value="{{person}}">
+                <button type="submit">View Messages</button>
+            </form>
+        </p>
+        {% endfor %}
+    
+    <a href="/view"><button>Back to home</button></a>
+    <p>🏠</p>
+
+</body>
+</html> 

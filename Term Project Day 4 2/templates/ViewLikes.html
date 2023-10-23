@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Your Likes</title>
+</head>
+<body>
+    <h1>Your likes</h1>
+
+        {% for like in likes %}
+        <p>Name: {{ like[0][2] }}</p>
+        <p>FSUID: {{ like[0][9] }}</p>
+        <p><form method="POST" action="/profile"><input type="hidden" name="like" value="{{like[0][9]}}"><button type="submit">View Page</button></form></p>
+        {% endfor %}
+    
+    <a href="/view"><button>Back to home</button></a>
+    <p>🏠</p>
+</body>
+</html> 

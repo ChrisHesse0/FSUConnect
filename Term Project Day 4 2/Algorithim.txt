@@ -1,0 +1,5 @@
+Create an Algorthim that constantly updates the stream of users based off previous choices 
+
+Steps: 
+    1. Start off with a randomized stream of users 
+    2. If 25 percent of the users likes are a specific type(ex: computer science, 18 years old, )

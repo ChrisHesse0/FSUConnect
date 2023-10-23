@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gold Purchase</title>
+    <style>
+		body {
+			background-color: rgb(212,175,55);
+		}
+	</style>
+</head>
+<body>
+	<h1>Purchase Gold Package:</h1>
+	<p>Enter Credit/Debit Card Number:</p>
+	
+	<form action = "{{url_for('checkCardGold')}}" method = "POST">
+        <p>Card Number: <input type="text" name="CardNum"> </p>
+        <input type = "submit" value = "Submit">
+    </form>
+    <a href = "/view"><Button>Back to Home</Button></a>
+	<p>🏠</p>
+
+	
+	
+</body>
+</html>

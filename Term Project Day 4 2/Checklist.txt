@@ -1,0 +1,10 @@
+User Login
+Have Screen for 3 Different levels
+Have a 'purchase' screen to upgrade
+Messages Database
+Comments Database
+User Database
+Likes Database
+View Screen
+
+

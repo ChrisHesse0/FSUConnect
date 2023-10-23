@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Screen</title>
+    <style>
+        .upper-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 10px;
+        }
+        .upper-right-bottom {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        margin: 10px;
+        }
+        .center {
+        text-align: center;
+        }
+        .buffer{
+        height: 15vh;
+        }
+    </style>
+</head>
+<body>
+    <a href = "/upgrade" ><button class="upper-right">Upgrade your account!</button></a>
+    <a href = "/signout" ><button class="upper-right-bottom">Sign Out</button></a>
+    <a href = "/yourlikes" ><button class="upper-left">View Likes</button></a>
+    <p><a href = "/yourcomments" ><button class ="upper-left-bottom">View Comments</button></a><p>
+    <p><a href = "/yourmessages"><button>View Messages</button></a>
+    <div class="buffer"></div>
+    <div class="center">
+    <h1>There's no more people to view!</h1>
+    <p>Come back later for more users!<br><p>
+    <a href="/yourlikes"><button style="background-color: red">Go back to your likes!</button><br></a>
+    <a href="/yourcomments"><button style="background-color: rgb(0, 213, 255)">View your Comments!</button></a>
+    </p>
+    </div>
+</body>
+</html> 

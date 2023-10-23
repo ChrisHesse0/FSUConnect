@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Screen</title>
+    <style>
+        .upper-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 10px;
+        }
+        .upper-right-bottom {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        margin: 10px;
+        }
+        .center {
+        text-align: center;
+        }
+        .buffer{
+        height: 15vh;
+        }
+        .like{
+        width: 200px;
+        height: 60px;
+        background-color: green;
+        border: 2px solid black;
+        border-radius: 3px;
+        color: white;
+        font-size: 28px;
+        }
+        .dislike{
+        width: 200px;
+        height: 60px;
+        background-color: red;
+        border: 2px solid black;
+        border-radius: 3px;
+        color: white;
+        font-size: 28px;
+        }
+    </style>
+
+</head>
+<body>
+    <a href = "/upgrade" ><button class="upper-right">Upgrade your account!</button></a>
+    <a href = "/signout" ><button class="upper-right-bottom">Sign Out</button></a>
+    <a href = "/yourlikes" ><button class="upper-left">View Likes</button></a>
+    <p><a href = "/yourcomments" ><button class ="upper-left-bottom">View Comments</button></a><p>
+    <p><a href = "/yourmessages"><button>View Messages</button></a>
+    <div class="buffer"></div>
+    <div class="center">
+        <h1><strong>{{name}}</strong></h1><br>
+        <p2><strong>Major:</strong> {{major}}</p2>
+        <p3><strong>GPA:</strong> {{gpa}}</p3>
+        <h2><strong>Summary:</strong></h2>
+        <p4>{{description}}</p4>
+        <div class="buffer"></div>
+        <form method="POST" action="{{ url_for('dislike') }}">
+            <button type="submit" class="dislike">Dislike</button>
+        </form>
+        <form method="POST" action="{{ url_for('like') }}">
+            <button type="submit" class="like">Like</button>
+        </form>
+
+          
+       
+    </div>
+
+
+</body>
+</html> 

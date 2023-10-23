@@ -1,0 +1,16 @@
+CREATE TABLE Users
+(
+FirstName VARCHAR(25),
+LastName VARCHAR(30),
+Major VARCHAR(40),
+Age INTEGER(2),
+YearInSchool INTEGER(4),
+UserID INTEGER(8)
+);
+
+CREATE TABLE LoginInfo
+(
+UserID INTEGER(8),
+Username VARCHAR(25),
+Password VARCHAR(25)
+);
